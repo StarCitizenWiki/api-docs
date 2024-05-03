@@ -4,66 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="dist/swagger-ui.css" />
+    <link rel="stylesheet" type="text/css" href="dist/index.css" />
     <link rel="icon" type="image/ico" href="favicon.ico" sizes="16x16" />
-    <style>
-      html, body {
-        height: 100%;
-        background: #14181f;
-        font-family: sans-serif;
-        color: #fff;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-      }
-
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 4rem;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height: 100%;
-        text-align: center;
-      }
-      div {
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-      }
-      a {
-        display: block;
-        padding: 4rem;
-        background: #1d2330;
-        color: #fff;
-        border-radius: 1rem;
-        text-decoration: none;
-        transition: background 0.2s ease;
-        font-weight: bold;
-        font-size: 2rem;
-      }
-      h1 {
-        margin-bottom: 4rem;
-      }
-      a:hover {
-        background: #363d49;
-      }
-    </style>
   </head>
 
   <body>
-  <main>
-    <h1>Star Citizen Wiki API</h1>
-    <div>
-      <a href="v1.html">API V1</a>
-      <a href="v2.html">API V2</a>
-    </div>
-  </main>
+    <div id="swagger-ui"></div>
+    <script src="dist/swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="dist/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="dist/swagger-initializer-v2.js" charset="UTF-8"> </script>
     <script defer data-domain="docs.star-citizen.wiki" src="https://analytics.star-citizen.wiki/js/script.js"></script>
   </body>
 </html>
